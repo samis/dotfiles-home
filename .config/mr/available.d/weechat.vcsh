@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/weechat.git]
+checkout = vcsh clone git@github.com:samis/dotfiles-weechat.git weechat
