@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/gnupg.git]
+checkout = vcsh clone git@git.cube.9net:samis/dotfiles_gnupg.git gnupg
