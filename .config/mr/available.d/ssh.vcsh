@@ -1,0 +1,3 @@
+[$HOME/.config/vcsh/repo.d/ssh.git]
+checkout = vcsh clone http://git.cube.9net:3000/samis/dotfiles_ssh.git ssh
+
