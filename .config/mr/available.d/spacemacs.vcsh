@@ -1,3 +1,0 @@
-[$HOME/.config/vcsh/repo.d/spacemacs.git]
-checkout = vcsh clone git@github.com:samis/dotfiles-spacemacs.git spacemacs
-
