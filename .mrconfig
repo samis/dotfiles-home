@@ -1,10 +1,10 @@
 [DEFAULT]
 lib =
   hostname="$(hostname)"
-    whoami="$(whoami)"
-    on() {
-        for host in $@; do
-			if [ "${host%@*}" != "${host#*@}" ]; then
+  whoami="$(whoami)"
+  on() {
+    for host in $@; do
+	    if [ "${host%@*}" != "${host#*@}" ]; then
 				if [ "$whoami" != "${host%@*}" ]; then
 					continue
 				fi
@@ -15,7 +15,10 @@ lib =
 			fi
 		done
 		return 1
-	  }
+	}
+  off() {
+    ! on $1
+  }
 git_gc = git gc "$@"
 jobs = 5
 
@@ -24,12 +27,12 @@ checkout = git clone 'https://github.com/syl20bnr/spacemacs' '.emacs.d'
 
 [$HOME/.config/vcsh/repo.d/gnupg.git]
 checkout = vcsh clone git@git.cube.9net:samis/dotfiles_gnupg.git gnupg
-skip = ! on mute-ai
+skip = off mute-ai && off hyun-ae
 fixups = chmod ~/.gnupg 700 && chmod 600 ~/.gnupg/*
 
 [$HOME/.config/vcsh/repo.d/gui.git]
 checkout = vcsh clone git@github.com:samis/dotfiles-gui.git gui
-skip = ! on mute-ai
+skip = off mute-ai && off hyun-ae
 
 [$HOME/.config/vcsh/repo.d/mr.git]
 checkout = vcsh clone git@github.com:samis/dotfiles-mr.git mr
@@ -42,10 +45,10 @@ checkout = vcsh clone git@github.com:samis/dotfiles-spacemacs.git spacemacs
 
 [$HOME/.config/vcsh/repo.d/ssh.git]
 checkout = vcsh clone http://git.cube.9net:3000/samis/dotfiles_ssh.git ssh
-skip = ! on mute-ai
+skip = off mute-ai && off hyun-ae
 fixups = chmod 600 ~/.ssh/id_rsa
 
 [$HOME/.config/vcsh/repo.d/weechat.git]
 checkout = vcsh clone git@github.com:samis/dotfiles-weechat.git weechat
-skip =  ! on mute-ai
+skip =  off mute-ai && off hyun-ae
 
