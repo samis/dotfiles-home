@@ -22,17 +22,9 @@ lib =
 git_gc = git gc "$@"
 jobs = 5
 
-[.emacs.d]
-checkout = git clone 'https://github.com/syl20bnr/spacemacs' '.emacs.d'
-
-[$HOME/etc/vcsh/repo.d/gnupg.git]
-checkout = vcsh clone git@git.cube.9net:samis/dotfiles_gnupg.git gnupg
-skip = off mute-ai && off hyun-ae
-fixups = chmod ~/.gnupg 700 && chmod 600 ~/.gnupg/*
-
 [$HOME/etc/vcsh/repo.d/gui.git]
 checkout = vcsh clone git@github.com:samis/dotfiles-gui.git gui
-skip = off mute-ai && off hyun-ae
+skip = off mute-ai hyun-ae
 
 [$HOME/etc/vcsh/repo.d/home.git]
 checkout = vcsh clone git@github.com:samis/dotfiles-home.git home
@@ -40,17 +32,25 @@ checkout = vcsh clone git@github.com:samis/dotfiles-home.git home
 [$HOME/etc/vcsh/repo.d/shell.git]
 checkout = vcsh clone git@github.com:samis/dotfiles-shell.git shell
 
-[$HOME/etc/vcsh/repo.d/spacemacs.git]
-checkout = vcsh clone git@github.com:samis/dotfiles-spacemacs.git spacemacs
-
 [$HOME/etc/vcsh/repo.d/ssh.git]
 checkout = vcsh clone http://git.cube.9net:3000/samis/dotfiles_ssh.git ssh
 skip = off mute-ai hyun-ae
 fixups = chmod 600 ~/.ssh/id_rsa
 
-[$HOME/etc/vcsh/repo.d/weechat.git]
-checkout = vcsh clone git@github.com:samis/dotfiles-weechat.git weechat
-skip =  off mute-ai hyun-ae
-
 [.babushka/deps]
 checkout = git clone 'git@github.com:samis/babushka-deps.git' 'deps'
+
+[.gnupg]
+checkout = git clone 'git@git.cube.9net:samis/dotfiles_gnupg.git' '.gnupg'
+skip = off mute-ai hyun-ae
+fixups = chmod ~/.gnupg 700 && chmod 600 ~/.gnupg/*
+
+[.weechat]
+checkout = git clone 'git@github.com:samis/dotfiles-weechat.git' '.weechat'
+skip = off mute-ai hyun-ae
+
+[.ssh]
+checkout = git clone 'http://git.cube.9net:3000/samis/dotfiles_ssh.git/' '.ssh'
+
+[.emacs.d]
+checkout = git clone 'git@github.com:samis/dotfiles-emacs.git' '.emacs.d'
