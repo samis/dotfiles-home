@@ -20,16 +20,13 @@ lib =
 	   ! on $@
 	 }
 git_tracked = git ls-files
-vcsh_tracked = vcsh list-tracked $@
+vcsh_tracked = vcsh list-tracked "$@"
 git_gc = git gc "$@"
 jobs = 5
 
 [$HOME/etc/vcsh/repo.d/gui.git]
 checkout = vcsh clone git@github.com:samis/dotfiles-gui.git gui
 skip = off mute-ai hyun-ae
-
-[$HOME/etc/vcsh/repo.d/shell.git]
-checkout = vcsh clone git@github.com:samis/dotfiles-shell.git shell
 
 [.babushka/deps]
 checkout = git clone 'git@github.com:samis/babushka-deps.git' 'deps'

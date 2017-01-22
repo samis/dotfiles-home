@@ -6,3 +6,5 @@ other
 .weechat
 .emacs.d
 tmp
+.zcompdump-*
+.xsession-errors*

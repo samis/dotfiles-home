@@ -1,0 +1,13 @@
+[user]
+	email = samuel.hodgkins@sky.com
+	name = Samuel Hodgkins
+[gc]
+	auto = 0
+[status]
+	submoduleSummary = true
+[github]
+	user = samis
+[push]
+	default = matching
+[credential]
+	helper = store
