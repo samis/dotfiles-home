@@ -57,3 +57,18 @@ checkout = git clone 'https://github.com/robbyrussell/oh-my-zsh.git' '.oh-my-zsh
 
 [.oh-my-zsh/custom/themes/powerlevel9k]
 checkout = git clone 'https://github.com/bhilburn/powerlevel9k.git' 'powerlevel9k'
+
+[etc]
+checkout = git clone 'git@github.com:samis/dotfiles-etc.git' 'etc'
+
+[share]
+checkout = git clone 'git@git.cube.9net:samis/dotfiles-share.git' 'share'
+
+[src]
+checkout = git clone 'git@git.cube.9net:samis/src.git' 'src'
+
+[doc]
+checkout = git clone 'git@git.cube.9net:samis/doc.git' 'doc'
+
+[develop]
+checkout = git clone 'git@git.cbue.9net:samis/develop.git' 'develop'
