@@ -32,11 +32,6 @@ checkout = vcsh clone git@github.com:samis/dotfiles-home.git home
 [$HOME/etc/vcsh/repo.d/shell.git]
 checkout = vcsh clone git@github.com:samis/dotfiles-shell.git shell
 
-[$HOME/etc/vcsh/repo.d/ssh.git]
-checkout = vcsh clone http://git.cube.9net:3000/samis/dotfiles_ssh.git ssh
-skip = off mute-ai hyun-ae
-fixups = chmod 600 ~/.ssh/id_rsa
-
 [.babushka/deps]
 checkout = git clone 'git@github.com:samis/babushka-deps.git' 'deps'
 
@@ -51,9 +46,12 @@ skip = off mute-ai hyun-ae
 
 [.ssh]
 checkout = git clone 'http://git.cube.9net:3000/samis/dotfiles_ssh.git/' '.ssh'
+skip = off mute-ai hyun-ae
+fixups = chmod 600 ~/.ssh/id_rsa
 
 [.emacs.d]
 checkout = git clone 'git@github.com:samis/dotfiles-emacs.git' '.emacs.d'
 
 [etc/awesome]
 checkout = git clone 'git@github.com:samis/dotfiles-awesome.git' 'awesome'
+skip = off mute-ai hyun-ae
