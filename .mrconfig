@@ -19,15 +19,14 @@ lib =
 	 off() {
 	   ! on $@
 	 }
+git_tracked = git ls-files
+vcsh_tracked = vcsh list-tracked $@
 git_gc = git gc "$@"
 jobs = 5
 
 [$HOME/etc/vcsh/repo.d/gui.git]
 checkout = vcsh clone git@github.com:samis/dotfiles-gui.git gui
 skip = off mute-ai hyun-ae
-
-[$HOME/etc/vcsh/repo.d/home.git]
-checkout = vcsh clone git@github.com:samis/dotfiles-home.git home
 
 [$HOME/etc/vcsh/repo.d/shell.git]
 checkout = vcsh clone git@github.com:samis/dotfiles-shell.git shell
@@ -55,3 +54,7 @@ checkout = git clone 'git@github.com:samis/dotfiles-emacs.git' '.emacs.d'
 [etc/awesome]
 checkout = git clone 'git@github.com:samis/dotfiles-awesome.git' 'awesome'
 skip = off mute-ai hyun-ae
+
+[/home/samis]
+checkout = git clone 'git@github.com:samis/dotfiles-home.git' 'samis'
+post_checkout = mv samis .
