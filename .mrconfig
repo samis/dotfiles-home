@@ -24,10 +24,6 @@ vcsh_tracked = vcsh list-tracked "$@"
 git_gc = git gc "$@"
 jobs = 5
 
-[$HOME/etc/vcsh/repo.d/gui.git]
-checkout = vcsh clone git@github.com:samis/dotfiles-gui.git gui
-skip = off mute-ai hyun-ae
-
 [.babushka/deps]
 checkout = git clone 'git@github.com:samis/babushka-deps.git' 'deps'
 
@@ -55,3 +51,9 @@ skip = off mute-ai hyun-ae
 [/home/samis]
 checkout = git clone 'git@github.com:samis/dotfiles-home.git' 'samis'
 post_checkout = mv samis .
+skip = off mute-ai hyun-ae
+[.oh-my-zsh]
+checkout = git clone 'https://github.com/robbyrussell/oh-my-zsh.git' '.oh-my-zsh'
+
+[.oh-my-zsh/custom/themes/powerlevel9k]
+checkout = git clone 'https://github.com/bhilburn/powerlevel9k.git' 'powerlevel9k'

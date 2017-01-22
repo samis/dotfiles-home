@@ -8,3 +8,9 @@ other
 tmp
 .zcompdump-*
 .xsession-errors*
+.oh-my-zsh
+.babushka
+develop
+etc
+share
+src
