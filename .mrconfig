@@ -54,3 +54,6 @@ checkout = git clone 'http://git.cube.9net:3000/samis/dotfiles_ssh.git/' '.ssh'
 
 [.emacs.d]
 checkout = git clone 'git@github.com:samis/dotfiles-emacs.git' '.emacs.d'
+
+[etc/awesome]
+checkout = git clone 'git@github.com:samis/dotfiles-awesome.git' 'awesome'
