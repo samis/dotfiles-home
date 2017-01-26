@@ -136,6 +136,7 @@ prepend () {
 }
 append PATH /home/samis/.gem/ruby/2.1.0/bin
 prepend PATH /home/samis/bin
+prepend PATH /home/samis/.cabal/bin/
 export XDG_CACHE_HOME="/home/samis/tmp/cache"
 export XDG_CONFIG_HOME="/home/samis/etc"
 export XDG_DATA_HOME="/home/samis/share/"

@@ -26,3 +26,5 @@ test -z "$PROFILEREAD" && . /etc/profile || true
 #    /usr/bin/fortune
 #    echo
 #fi
+
+export PATH="$HOME/.cargo/bin:$PATH"
