@@ -37,7 +37,6 @@ src
 .gentoo/
 .ghc/
 .gimv/
-.gitattributes
 .gstreamer-0.10/
 .icons/
 .ivy2/
