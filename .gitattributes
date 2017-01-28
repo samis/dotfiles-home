@@ -1,1 +1,1 @@
-.taskrc filter=git-crypt diff=git-crypt
+.taskrc-private filter=git-crypt diff=git-crypt
