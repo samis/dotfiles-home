@@ -28,4 +28,4 @@ data.location=~/.task
 #include /usr/share/task/rc/solarized-dark-256.theme
 #include /usr/share/task/rc/solarized-light-256.theme
 #include /usr/share/task/rc/no-color.theme
-includde .taskrc-private
+include /home/samis/.taskrc-private
