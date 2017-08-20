@@ -10,7 +10,7 @@ tmp
 .xsession-errors*
 .oh-my-zsh
 .babushka
-develop
+develop/
 etc
 share
 src
