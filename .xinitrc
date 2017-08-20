@@ -17,9 +17,10 @@ gpg-connect-agent updatestartuptty /bye
 # exec enlightenment_start > ~/xsession.log 2>&1
 # Set the keyboard layout
 setxkbmap -layout gb
+rm ~/xsession.log
 # Run programs
-terminology -e weechat &
-firefox-bin &
-thunderbird-bin &
+terminology -e weechat >> ~/xsession.log 2>&1 &
+firefox >> ~/xsession.log 2>&1 &
+thunderbird-bin >> ~/xsession.log 2>&1 &
 # Execute awesomeWM
-exec awesome > ~/xsession.log 2>&1
+exec awesome >> ~/xsession.log 2>&1
