@@ -49,7 +49,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gitignore git-extras colored-man-pages extract safe-paste )
+plugins=(gitignore git-extras colored-man-pages extract safe-paste zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 
@@ -99,7 +99,7 @@ alias ind=in-dotfiles
 eval $(gpg-agent --daemon --enable-ssh-support)
 # GNUstep application root
 export GNUSTEP_USER_ROOT="${HOME}/GNUstep"
-
+alias xmlpp"=xmllint --format"
 # Add to the path variable named by $1 the component $2.  $3 must be
 # "append" or "prepend" to indicate where the component is added.
 addpath () {
