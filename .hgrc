@@ -1,2 +1,13 @@
 [ui]
 username = Samuel Hodgkins <samuel.hodgkins@sky.com>
+
+[extensions]
+strip =
+color =
+pager =
+hgext.bookmarks =
+hggit =
+
+[pager]
+pager = LESS=FRX less
+quiet = True

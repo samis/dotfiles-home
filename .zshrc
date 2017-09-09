@@ -50,7 +50,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gitignore git-extras colored-man-pages extract safe-paste )
+plugins=(gitignore git-extras colored-man-pages extract safe-paste zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 
@@ -58,7 +58,8 @@ plugins=(gitignore git-extras colored-man-pages extract safe-paste )
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_GB.UTF-8
+export LC_CTYPE=en_GB.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -99,7 +100,7 @@ alias ind=in-dotfiles
 eval $(gpg-agent --daemon --enable-ssh-support)
 # GNUstep application root
 export GNUSTEP_USER_ROOT="${HOME}/GNUstep"
-
+alias xmlpp"=xmllint --format"
 # Add to the path variable named by $1 the component $2.  $3 must be
 # "append" or "prepend" to indicate where the component is added.
 addpath () {
