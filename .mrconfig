@@ -76,3 +76,9 @@ skip = off mute-ai hyun-ae
 [develop]
 checkout = git clone 'git@git.cube.9net:samis/develop.git' 'develop'
 skip = off mute-ai hyun-ae
+
+[.oh-my-zsh/custom/plugins/zsh-autosuggestions]
+checkout = git clone 'git://github.com/zsh-users/zsh-autosuggestions' 'zsh-autosuggestions'
+
+[.oh-my-zsh/custom/plugins/zsh-syntax-highlighting]
+checkout = git clone 'https://github.com/zsh-users/zsh-syntax-highlighting.git' 'zsh-syntax-highlighting'
