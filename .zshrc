@@ -136,6 +136,7 @@ append () {
 prepend () {
     addpath "$1" "$2" prepend
 }
+[ -f ".guix-profile/etc/profile" ] && source .guix-profile/etc/profile
 append PATH /home/samis/.gem/ruby/2.1.0/bin
 prepend PATH /home/samis/bin
 prepend PATH /home/samis/.cabal/bin/
@@ -143,7 +144,6 @@ export XDG_CACHE_HOME="/home/samis/tmp/cache"
 export XDG_CONFIG_HOME="/home/samis/etc"
 export XDG_DATA_HOME="/home/samis/share/"
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=true
-
 HISTSIZE=10000000
 SAVEHIST=10000000
 setopt BANG_HIST                 # Treat the '!' character specially during expansion.
