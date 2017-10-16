@@ -160,8 +160,11 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
 setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 
-PATH="/home/samis/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/samis/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+perl5_local_lib() {
+prepend PATH /home/samis/perl5/bin; export PATH
+prepend PERL5LIB /home/samis/perl5/lib/perl; export PERL5LIB
 PERL_LOCAL_LIB_ROOT="/home/samis/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/samis/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/samis/perl5"; export PERL_MM_OPT;
+}
+[-f "~/perl5" ] && perl5_local_lib
