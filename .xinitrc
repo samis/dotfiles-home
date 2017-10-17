@@ -22,5 +22,7 @@ rm ~/xsession.log
 terminology -e weechat >> ~/xsession.log 2>&1 &
 firefox >> ~/xsession.log 2>&1 &
 thunderbird-bin >> ~/xsession.log 2>&1 &
+# Launch GNU Shepherd
+shepherd
 # Execute awesomeWM
 exec awesome >> ~/xsession.log 2>&1
