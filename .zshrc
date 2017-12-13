@@ -82,11 +82,15 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context ssh custom_stratum dir vcs)
+POWERLEVEL9K_CUSTOM_STRATUM="brw"
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history command_execution_time time)
 POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='green'
 POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND="black"
 POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND="red"
 POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND="white"
 POWERLEVEL9K_HISTORY_BACKGROUND='238'
+POWERLEVEL9K_CUSTOM_STRATUM_BACKGROUND="green"
 export ALTERNATE_EDITOR=""
 #export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 alias emacs=emacsclient
@@ -140,6 +144,7 @@ prepend () {
 append PATH /home/samis/.gem/ruby/2.1.0/bin
 prepend PATH /home/samis/bin
 prepend PATH /home/samis/.cabal/bin/
+prepend PATH /home/samis/.luarocks/bin
 export XDG_CACHE_HOME="/home/samis/tmp/cache"
 export XDG_CONFIG_HOME="/home/samis/etc"
 export XDG_DATA_HOME="/home/samis/share/"
