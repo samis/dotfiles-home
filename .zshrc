@@ -83,7 +83,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context ssh custom_stratum dir vcs)
-POWERLEVEL9K_CUSTOM_STRATUM="brw"
+POWERLEVEL9K_CUSTOM_STRATUM="brw || true"""
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history command_execution_time time)
 POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='green'
 POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND="black"
