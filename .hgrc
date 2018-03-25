@@ -3,11 +3,10 @@ username = Samuel Hodgkins <samuel.hodgkins@sky.com>
 
 [extensions]
 strip =
-color =
 pager =
 hgext.bookmarks =
 hggit =
+histedit =
 
 [pager]
 pager = LESS=FRX less
-quiet = True
