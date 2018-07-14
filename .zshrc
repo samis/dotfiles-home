@@ -150,6 +150,7 @@ export XDG_CACHE_HOME="/home/samis/tmp/cache"
 export XDG_CONFIG_HOME="/home/samis/etc"
 export XDG_DATA_HOME="/home/samis/share/"
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=true
+export GUIX_LOCPATH="$HOME/.guix-profile/lib/locale"
 HISTSIZE=10000000
 SAVEHIST=10000000
 setopt BANG_HIST                 # Treat the '!' character specially during expansion.
