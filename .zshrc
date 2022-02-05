@@ -1,7 +1,7 @@
 [[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ ' && return
 # Path to your oh-my-zsh installation.
 export ZSH=/home/samis/.oh-my-zsh
-
+POWERLEVEL9K_MODE='nerdfont-complete'
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -82,8 +82,10 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context ssh dir vcs)
-[ -f "/bedrock/bin/brw" ] && POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context ssh custom_stratum dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context user ssh dir vcs)
+POWERLEVEL9K_USER_TEMPLATE=""
+POWERLEVEL9K_SUDO_ICON=$'\uF09C'
+[ -f "/bedrock/bin/brw" ] && POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context user ssh custom_stratum dir vcs)
 POWERLEVEL9K_CUSTOM_STRATUM="brw"
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history command_execution_time time)
 POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='green'

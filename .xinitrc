@@ -17,6 +17,7 @@ gpg-connect-agent updatestartuptty /bye
 # exec enlightenment_start > ~/xsession.log 2>&1
 # Set the keyboard layout
 setxkbmap -layout gb
+xrandr --output DisplayPort-1 --mode 2560x1440 --rate 144.00
 rm ~/xsession.log
 # Run programs
 terminology -e weechat >> ~/xsession.log 2>&1 &
